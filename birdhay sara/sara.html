@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>Saroura — Buon Compleanno 💖 Zouhair</title>
+
+<style>
+:root{
+  --pink:#ff4f9e;--pink-light:#ffa5d5;--violet:#4a1c68;
+  --violet-dark:#240935;--white:#fff7ff;
+  --card:rgba(255,255,255,0.18);--glass:rgba(255,255,255,0.12);
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Poppins", sans-serif;}
+
+body{
+  background:linear-gradient(160deg,var(--violet-dark),var(--violet),#571157);
+  color:var(--white);overflow-x:hidden;animation:fadeSite 1.8s ease;
+}
+@keyframes fadeSite{0%{opacity:0;}100%{opacity:1;}}
+
+header{
+  width:100%;padding:60px 20px;text-align:center;
+  background:linear-gradient(135deg,#ff4f9e66,#ffaad999,#ffffff15);
+  box-shadow:0 0 50px rgba(255,40,130,.35) inset;position:relative;
+}
+header h1{
+  font-size:3.2rem;background:linear-gradient(90deg,var(--pink),var(--pink-light));
+  -webkit-background-clip:text;color:transparent;text-shadow:0 0 25px rgba(255,100,200,.45);
+}
+header p{font-size:1.25rem;margin-top:10px;opacity:.9;}
+
+.ribbon{
+  width:105%;height:70px;background:linear-gradient(90deg,var(--pink),var(--violet),var(--pink));
+  box-shadow:0 0 40px rgba(255,0,150,.5);position:absolute;top:-8px;left:-3%;transform:rotate(-2deg);
+}
+header .heart{
+  position:absolute;font-size:48px;opacity:.6;animation:floatHeart 10s infinite ease-in-out;
+}
+header .heart.a{left:15%;top:40px;}
+header .heart.b{right:18%;top:120px;animation-delay:2s;}
+@keyframes floatHeart{50%{transform:translateY(-40px);}}
+
+/* HERO */
+.hero-img{width:100%;padding:40px 0;text-align:center;background:linear-gradient(180deg,var(--violet),#2b0a3a,var(--violet));}
+.hero-img img{
+  width:260px;height:260px;border-radius:30px;object-fit:cover;border:4px solid rgba(255,255,255,.25);
+  margin:12px;transition:.7s;box-shadow:0 0 30px var(--pink-light),0 0 60px rgba(255,180,255,.45);
+}
+.hero-img img:hover{transform:scale(1.1) rotate(3deg);}
+
+/* MESSAGE */
+.message{
+  width:90%;max-width:900px;margin:50px auto;padding:30px;background:var(--glass);backdrop-filter:blur(12px);
+  border-radius:30px;text-align:center;line-height:1.9;font-size:1.2rem;box-shadow:0 0 40px rgba(255,80,160,.35);
+  animation:popUp 1.5s ease forwards;position:relative;
+}
+.message h2{color:var(--pink-light);font-size:2.2rem;margin-bottom:15px;}
+@keyframes popUp{0%{transform:scale(.8);opacity:0;}100%{transform:scale(1);opacity:1;}}
+
+.message::before{
+  content:"❝";font-size:120px;color:#ffffff22;position:absolute;left:-50px;top:-40px;
+}
+.message::after{
+  content:"❞";font-size:120px;color:#ffffff22;position:absolute;right:-50px;bottom:-40px;
+}
+
+/* GALLERY */
+.gallery{width:100%;padding:50px 0;background:#320a46;box-shadow:0 -30px 50px rgba(0,0,0,.6) inset;}
+.gallery h3{
+  font-size:2.3rem;margin-bottom:25px;background:linear-gradient(90deg,#ff91d0,#ffd6f2);
+  -webkit-background-clip:text;color:transparent;
+}
+.gallery-wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:18px;}
+.gallery img{
+  width:200px;height:200px;border-radius:20px;object-fit:cover;border:4px solid rgba(255,255,255,.25);
+  transition:.5s;cursor:pointer;box-shadow:0 0 25px rgba(255,100,200,.5);
+}
+.gallery img:hover{transform:scale(1.15) rotate(-4deg);}
+
+/* LIGHTBOX */
+.lightbox{
+  position:fixed;inset:0;background:rgba(0,0,0,.88);display:flex;justify-content:center;align-items:center;
+  transform:scale(.8);opacity:0;pointer-events:none;transition:.5s;z-index:200;
+}
+.lightbox:target{opacity:1;transform:scale(1);pointer-events:auto;}
+.lightbox img{max-width:88%;max-height:85%;border-radius:25px;box-shadow:0 0 60px var(--pink-light);animation:zoom .6s ease;}
+@keyframes zoom{from{transform:scale(.5);}to{transform:scale(1);} }
+.close{position:absolute;top:30px;right:30px;font-size:33px;text-decoration:none;color:white;font-weight:bold;}
+
+/* RESPONSIVE TELEPHONE */
+@media(max-width:550px){
+  header h1{font-size:2.1rem;}
+  header p{font-size:1rem;}
+  .hero-img img{width:200px;height:200px;}
+  .gallery img{width:150px;height:150px;}
+  .message{font-size:1rem;padding:22px;}
+}
+
+footer{
+  background:#13031d;padding:18px;margin-top:30px;color:#ffddf9;font-size:1.1rem;letter-spacing:1px;text-align:center;
+}
+footer span{color:var(--pink-light);font-weight:bold;}
+</style>
+</head>
+<body>
+
+<div class="ribbon"></div>
+
+<header>
+  <h1>💖 Buon Compleanno, Saroura 💖</h1>
+  <p>Alla ragazza più bella — luce dei miei giorni e gioia della vita ✨</p>
+  <span class="heart a">❤</span>
+  <span class="heart b">❤</span>
+</header>
+
+<div class="hero-img">
+  <img src="sssss.jpeg" alt="Foto 1">
+  <img src="aaaa.jpeg" alt="Foto 2">
+</div>
+
+<div class="message">
+  <h2>Parole dal cuore per te 🌸</h2>
+  <p>
+    Oggi è il tuo compleanno e la gioia abbraccia il cielo, <br>
+    ogni anno sei più dolce dei fiori e più bella della luna. <br>
+    La tua presenza è una benedizione; questo sito è il mio regalo ❤️ <br>
+    Perché rimanga un ricordo pieno d'amore e bellezza — <br>
+    meriti tutto ciò che di più bello esiste al mondo.
+  </p>
+  <p style="margin-top:18px;font-weight:bold;color:#fff;">— Con tutto l'amore, Sara Saria</p>
+</div>
+
+<div class="gallery">
+  <h3>I tuoi ricordi preziosi 📷</h3>
+  <div class="gallery-wrap">
+    <a href="#img1"><img src="sssss.jpeg" alt="Ricordo 1"></a>
+    <a href="#img2"><img src="aaaa.jpeg" alt="Ricordo 2"></a>
+  </div>
+</div>
+
+<div id="img1" class="lightbox"><a href="#_" class="close">✕</a><img src="sssss.jpeg" alt="Immagine 1"></div>
+<div id="img2" class="lightbox"><a href="#_" class="close">✕</a><img src="aaaa.jpeg" alt="Immagine 2"></div>
+
+<footer>
+✨ Ti auguro tanta felicità, successo e amore infinito — <span>Saroura</span> ✨<br>
+<strong>Designed by Kaloui Zouhair</strong>
+</footer>
+
+</body>
+</html>
